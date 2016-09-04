@@ -1,0 +1,39 @@
+﻿<Window
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:barChartControlDemo="clr-namespace:BarChartControlDemo"
+    x:Class="BarChartControlDemo.MainWindow"
+Title="MainWindow" Height="350" Width="600" Background="#FF8181C5">
+    <Grid>
+        <barChartControlDemo:BarChartControl BorderBrush="White" Width="500" Height="200" BorderThickness="2,0,2,0" HeaderHeight="20">
+            <barChartControlDemo:BarChartControl.AxisY>
+                <barChartControlDemo:AxisYModel Width="30" ForeGround="White">
+                    <barChartControlDemo:AxisYModel.Titles>
+                        <barChartControlDemo:AxisYDataModel Name="0" Value="0"></barChartControlDemo:AxisYDataModel>
+                        <barChartControlDemo:AxisYDataModel Name="20" Value="20"></barChartControlDemo:AxisYDataModel>
+                        <barChartControlDemo:AxisYDataModel Name="40" Value="40"></barChartControlDemo:AxisYDataModel>
+                        <barChartControlDemo:AxisYDataModel Name="60" Value="60"></barChartControlDemo:AxisYDataModel>
+                        <barChartControlDemo:AxisYDataModel Name="80" Value="80"></barChartControlDemo:AxisYDataModel>
+                        <barChartControlDemo:AxisYDataModel Name="100" Value="100"></barChartControlDemo:AxisYDataModel>
+                    </barChartControlDemo:AxisYModel.Titles>
+                </barChartControlDemo:AxisYModel>
+            </barChartControlDemo:BarChartControl.AxisY>
+            <barChartControlDemo:BarChartControl.AxisX>
+                <barChartControlDemo:AxisXModel Height="30" ForeGround="White" LabelWidth="60">
+                    <barChartControlDemo:AxisXModel.Datas>
+                        <barChartControlDemo:AxisXDataModel Name="C#" Value="100" FillBrush="#FF2C87AC" FillEndBrush="SkyBlue"></barChartControlDemo:AxisXDataModel>
+                        <barChartControlDemo:AxisXDataModel Name="Java" Value="20" FillBrush="#FF04A856" FillEndBrush="SpringGreen"></barChartControlDemo:AxisXDataModel>
+                        <barChartControlDemo:AxisXDataModel Name="Php" Value="40" FillBrush="DodgerBlue" FillEndBrush="#FF60B0FD"></barChartControlDemo:AxisXDataModel>
+                        <barChartControlDemo:AxisXDataModel Name="Winform" Value="79" FillBrush="#FFF70B0B" FillEndBrush="#FFFD7F7F"></barChartControlDemo:AxisXDataModel>
+                        <barChartControlDemo:AxisXDataModel Name="Silverlight" Value="98" FillBrush="#FF6EA816" FillEndBrush="GreenYellow"></barChartControlDemo:AxisXDataModel>
+                        <barChartControlDemo:AxisXDataModel Name="Mvc" Value="60" FillBrush="#FF6EA816" FillEndBrush="GreenYellow"></barChartControlDemo:AxisXDataModel>
+                        <barChartControlDemo:AxisXDataModel Name="Python" Value="81" FillBrush="#FFF70B0B" FillEndBrush="#FFFD7F7F"></barChartControlDemo:AxisXDataModel>
+                        <barChartControlDemo:AxisXDataModel Name="Ruby" Value="0" FillBrush="DodgerBlue" FillEndBrush="#FF60B0FD"></barChartControlDemo:AxisXDataModel>
+                        <barChartControlDemo:AxisXDataModel Name="Linux" Value="99" FillBrush="DodgerBlue" FillEndBrush="#FF60B0FD"></barChartControlDemo:AxisXDataModel>
+                        <barChartControlDemo:AxisXDataModel Name="VB" Value="45" FillBrush="DodgerBlue" FillEndBrush="#FF60B0FD"></barChartControlDemo:AxisXDataModel>
+                    </barChartControlDemo:AxisXModel.Datas>
+                </barChartControlDemo:AxisXModel>
+            </barChartControlDemo:BarChartControl.AxisX>
+        </barChartControlDemo:BarChartControl>
+    </Grid>
+</Window>
